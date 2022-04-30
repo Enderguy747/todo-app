@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>To Do App</title>
+</head>
+
+<body>
+    <header>
+        <h1>To Do App</h1>
+        <h3>In this app you´ll easily create a list of todo´s for easily remember what you have to do next &#9745;</h3>
+    </header>
+    <main>
+        <section>
+            <form id="form" method="post">
+                <fieldset>
+                    <legend>What you wanna save?</legend>
+                    <label for="titleField">Title</label>
+                    <input type="text" id="titleField" name="todo" placeholder="Write something" autofocus>
+                    <label for="descriptionField">Description</label>
+                    <textarea id="descriptionField" name="description" placeholder="Write something"></textarea>
+                    <button type="submit">Add</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+           <div class="todos">
+
+           </div>
+        </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
