@@ -38,18 +38,13 @@ export default class Database {
   }
 
   getTodos () {
-    return JSON.parse(localStorage.getItem('todos'))
+    return this.todos.map(todo => { return { ...todo } })
   }
 
-  setId (id) {
-    this.id = id
-  }
-
-  setTitle (title) {
-    this.title = title
-  }
-
-  setDescription (description) {
-    this.description = description
+  resetDataBase () {
+    this.todos = []
+    localStorage.clear()
+    console.log(this.todos)
+    console.log(JSON.parse(localStorage.getItem('todos')))
   }
 }
